@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "536528391895",
+    "project_id": "chegg-platform",
+    "storage_bucket": "chegg-platform.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:536528391895:android:6560f87950ca93fb5baa92",
+        "android_client_info": {
+          "package_name": "com.example.chegg_platform"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "536528391895-ka477is5jjjecgt4h19qp0uuuamhnu8k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.chegg_platform",
+            "certificate_hash": "402dddab4160474d54eab903f769cc68c1f62f8e"
+          }
+        },
+        {
+          "client_id": "536528391895-uv3fum22urf8fufnkgjprto4a98e2m5s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSGJuQ41C3RfW8QcvzPEr76-xw87aMoYc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "536528391895-uv3fum22urf8fufnkgjprto4a98e2m5s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
