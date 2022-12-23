@@ -11,7 +11,6 @@ import 'package:chegg_platform/user_home.dart';
 import 'package:flutter/material.dart';
 import 'dart:ffi';
 
-
 void main() {
   //async
   // WidgetsFlutterBinding.ensureInitialized();
@@ -26,28 +25,23 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return FutureBuilder(
       //Replace the 3 second delay with your initialization code:
-      future: Future.delayed(Duration(seconds: 2)),
+      future: Future.delayed(Duration(seconds: 4)),
       builder: (context, AsyncSnapshot snapshot) {
         //Show splash screen while waiting for app resources to load:
         if (snapshot.connectionState == ConnectionState.waiting) {
           return MaterialApp(
-            //to remove the banner in right corner
+              //to remove the banner in right corner
               debugShowCheckedModeBanner: false,
               theme: ThemeData(
-                  primaryColor: Colors.cyan.shade900,
-                  fontFamily: 'Latin'
-              ),
-              home: SplashScreen());//need to create this screen
-        }
-        else {
+                  primaryColor: Colors.cyan.shade900, fontFamily: 'Latin'),
+              home: SplashScreen()); //need to create this screen
+        } else {
           // Loading is done, return the app:
           return MaterialApp(
             //to remove the banner in right corner
             debugShowCheckedModeBanner: false,
             theme: ThemeData(
-                primaryColor: Colors.cyan.shade900,
-                fontFamily: 'Latin'
-            ),
+                primaryColor: Colors.cyan.shade900, fontFamily: 'Latin'),
             //need to change this to initial screen, means starting screen
             home: LoginScreen(),
             routes: {
